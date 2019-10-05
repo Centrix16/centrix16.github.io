@@ -61,8 +61,8 @@ p {
 	margin: 0 auto;
 }
 
-.home-link {
-	color: (--text-color);
+a.home-link {
+	color: var(--red_1);
 	font-family: Georgia, serif;
 	font-weight: bold;
 	text-decoration: none;
