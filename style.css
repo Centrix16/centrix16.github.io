@@ -1,0 +1,102 @@
+/*Общие стили*/
+html {
+	--text-color_1: hsl(210, 11%, 15%);
+	--blue_1: hsl(210, 100%, 15%);
+	--blue_2: hsl(210, 100%, 45%);
+	--red_1: hsl(0, 100%, 50%);
+	--red_2: hsl(0, 100%, 25%);
+	--black: hsl(0, 100%, 0%);
+	--white: hsl(0, 0%, 100%);
+	--purple: #3f459a;
+
+	box-sizing: border-box;
+	color: var(--text-color);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: Nelvetica, sans-serif;
+	line-height: 1.4;
+	background-color: var(--blue_2);
+	background-image: radial-gradient(var(--blue_2), var(--blue_1));
+	min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia;
+}
+
+a:link {
+	color: var(--red_1);
+}
+
+a:visited {
+	color: var(--red_2);
+}
+
+a:hover {
+	color: var(--red_2);
+}
+
+a:active {
+	color: var(--white);
+}
+
+p {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+/*Шапка сайта*/
+.nav-container_inner {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.home-link {
+	color: (--text-color);
+	font-family: Georgia, serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.home-link .party {
+	font-size: 1.5rem;/*24px*/
+	margin: 0.5em 0 0.5em;
+}
+
+.home-link .slogan {
+	font-size: 0.5rem;
+}
+
+.top-nav {
+	display: flex;
+	list-style-type: none;
+	align-items: center;
+	margin: 0;
+}
+
+.top-nav > li + li {
+	margin-left: 0.625em;
+}
+
+.top-nav a {
+	display: block;
+	padding: 0.3em 1.25em;
+	color: var(--white);
+	background: var(--purple);
+	text-decoration: none;
+	border-radius: 3px;
+}
+
+.top-nav a:hover {
+	background-color: var(--red_1);
+}
