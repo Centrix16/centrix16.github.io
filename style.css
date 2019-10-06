@@ -7,6 +7,7 @@ html {
 	--red_2: hsl(0, 100%, 25%);
 	--black: hsl(0, 100%, 0%);
 	--white: hsl(0, 0%, 100%);
+	--gray: hsl(0, 0%, 20%);
 	--purple: #3f459a;
 
 	box-sizing: border-box;
@@ -113,10 +114,12 @@ a.home-link {
 .hero__inner {
 	max-width: 1080px;
 	margin: 0 auto;
-	padding: 7em 15em 15em 0;
+	padding: 5em 15em 19em 0;
 	text-align: right;
 }
 
 .hero h2 {
 	font-size: 1.95rem;
+	font-weight: 900;
+	color: var(--gray);
 }
