@@ -21,11 +21,11 @@ html {
 
 body {
 	margin: 0;
-	font-family: Nelvetica, sans-serif;
+	font-family: Corbel, sans-serif;
 	line-height: 1.4;
 	background-color: var(--blue_2);
 	background-image: radial-gradient(var(--blue_2), var(--blue_1));
-	min-height: 100vh;
+	min-height: 200vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,7 +54,7 @@ p {
 }
 
 /*Шапка сайта*/
-.nav-container_inner {
+.nav-container__inner {
 	display: flex;
 	justify-content: space-between;
 	max-width: 1080px;
@@ -99,4 +99,24 @@ a.home-link {
 
 .top-nav a:hover {
 	background-color: var(--red_1);
+}
+
+/*Hero область*/
+.hero {
+	background: url(capitalism.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-bottom: 2.5rem;
+}
+
+.hero__inner {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 7em 15em 15em 0;
+	text-align: right;
+}
+
+.hero h2 {
+	font-size: 1.95rem;
 }
