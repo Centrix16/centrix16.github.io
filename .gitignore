@@ -1,0 +1,16 @@
+.*
+!.gitattributes
+!.gitignore
+
+
+#materials for the development of the site ACP
+/acp.txt
+/acp_programm.txt
+
+#a very old version of the site, made by Artem
+/artem_version/
+
+#
+!*.html
+!*.css
+!*.js
