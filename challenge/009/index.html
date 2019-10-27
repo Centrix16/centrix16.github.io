@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Clip-path Mousemove Effects</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="banner"></section>
+	<div class="content">
+		<h2>CSS Clip-path Mousemove Effects</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias maiores deserunt, a! Nisi enim, dolores hic, voluptas fugiat ipsa recusandae unde tempora corrupti iure in sed autem ut, dolor voluptatibus.</p>
+		<script>
+			var pos = document.documentElement;
+			pos.addEventListener("mousemove", e => {
+				pos.style.setProperty('--x',e.clientX + "px");
+				pos.style.setProperty('--y',e.clientY + "px");
+			});
+		</script>
+	</div>
+</body>
+</html>
