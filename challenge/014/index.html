@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Click and Hold</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+		<h2>Click and Hold Effects</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptate accusantium suscipit libero recusandae laborum dolor iure illo non facere officiis ullam adipisci rem, temporibus, assumenda eum aspernatur. Labore fugit assumenda velit perspiciatis, vitae ratione, consequuntur! Sunt voluptatum totam, harum rerum assumenda dignissimos voluptatibus, a eligendi laudantium, nam non omnis! Animi suscipit, cumque. Cumque, quos accusantium unde animi reiciendis hic, saepe vero eligendi cupiditate magni iusto facilis. Eaque labore officiis, tempore cupiditate quidem doloribus facere neque laboriosam, tempora minima pariatur deserunt quibusdam, dolorum a expedita architecto facilis commodi nostrum modi repudiandae recusandae. Optio eligendi repellendus iure voluptates soluta repudiandae nisi commodi ea.<br><br> Dolores explicabo maiores itaque, nisi et quasi cumque quidem voluptatum eius eveniet velit officiis molestias dicta id consectetur, consequuntur iusto, modi amet hic possimus doloribus! Inventore voluptas quis sapiente quod velit hic impedit, natus veritatis nostrum eveniet delectus iure adipisci accusamus ex soluta error, omnis. Est at vero quam eligendi quos iure ducimus enim quasi, molestias, ab culpa sapiente omnis natus nemo, doloremque?<br><br> Vitae consequatur magni velit molestias quaerat praesentium sequi excepturi dignissimos veniam voluptas perferendis, ut adipisci a recusandae facilis. Velit repudiandae, nihil pariatur blanditiis perspiciatis numquam doloribus amet impedit, voluptas voluptate odio non quidem consequuntur nemo ad? Accusamus.</p>
+	</section>
+	<div id="cursor"></div>
+	<script>
+		var cursor = document.getElementById('cursor');
+		window.onmousemove = function(e){
+			var x = e.clientX,
+				y = e.clientY;
+				cursor.style.left = x + 'px';
+				cursor.style.top = y + 'px';
+		}
+	</script>
+</body>
+</html>
