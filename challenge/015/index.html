@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Number Counter Preloader</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="preloader">
+		<div class="counter">0</div>
+	</div>
+	<section>
+		<h2>Welcome back to all!<span>Stay Tuned For More Video...</span></h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque vitae, ratione velit alias. Aliquam iste quod animi unde, dolorum consequuntur excepturi exercitationem dolore quos nemo delectus incidunt eos aspernatur laboriosam quo temporibus et magnam est, ex praesentium reprehenderit labore quaerat. Suscipit inventore totam, natus perspiciatis pariatur velit voluptatum tenetur ea maxime atque, nemo cum animi placeat excepturi temporibus sapiente unde dolor corrupti dolore harum adipisci vel alias recusandae reprehenderit dolorem. Consequuntur eius at optio consectetur repudiandae totam iusto, consequatur voluptates officiis laborum debitis vero error quasi ipsam, blanditiis ducimus dignissimos ex, impedit velit esse? Aliquid saepe eveniet et voluptas dolor, reiciendis atque laboriosam placeat ipsa velit quo quam quasi consequuntur tenetur neque optio fuga repellat. Sequi perferendis minima illo enim, praesentium dolor dignissimos fugit expedita, eaque sed, dolore error ab esse earum quod at aliquam quas adipisci totam placeat eos optio similique ducimus. Eaque quisquam, saepe earum ducimus, ea quam?<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto accusantium corporis autem iure, ipsa in tempore magnam culpa ratione nam quasi, quaerat ab ullam fugit eaque enim unde sit maxime repellendus quia. Asperiores molestias dolorem beatae minus alias laborum nesciunt blanditiis ad porro recusandae sapiente fugiat qui deleniti id iure commodi, fugit necessitatibus magnam ipsum! Quam tempora, reprehenderit dolores iste magni facilis sit fuga, voluptas neque eaque maxime facere sed ullam, eum dolor corrupti dicta veniam autem? Officia odio quibusdam molestiae fugiat, quod. Explicabo doloribus debitis modi pariatur laudantium animi, minima illum iusto natus enim voluptates non veritatis quidem, eaque quibusdam reiciendis sequi blanditiis voluptatum praesentium temporibus nesciunt maiores voluptate! Odit quidem temporibus quod aliquam vitae dolor sed asperiores numquam! Ipsum suscipit accusantium beatae dolorem vel, debitis corrupti expedita obcaecati repellendus non, nihil quos tenetur quod magnam veritatis officia minus? Odit cum aperiam hic tempore veniam cumque alias reiciendis consequatur iure corrupti commodi eius, totam repudiandae aliquid repellat impedit quo illo rem fugiat sequi excepturi molestias modi adipisci. Deserunt, aliquid!</p>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		function counter(){
+			var count = setInterval(function(){
+				var c = parseInt($('.counter').text());
+				$('.counter').text((++c).toString());
+				if (c == 100) {
+					clearInterval(count);
+					$('.counter').addClass('hide');
+					$('.preloader').addClass('active');
+				}
+			},60);
+		}
+		counter();
+	</script>
+</body>
+</html>
