@@ -1,0 +1,37 @@
+html
+{
+	box-sizing: border-box;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+	min-height: 200%;
+	background: #2a2a2e;
+	color: blue;
+}
+
+*
+{
+	box-sizing: border-box;
+}
+
+
+.nav-container
+{
+	background: #38383d;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 20px;
+	padding: 10px 20px 10px 20px;
+}
+
+.home-link a
+{
+	color: #9b50d9;
+}
+
+.main-nav
+{
+	display: flex;
+	justify-content: space-around;
+	min-width: 50%;
+	background: #2a2a2e;
+}
