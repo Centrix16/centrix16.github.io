@@ -1,11 +1,36 @@
 html
 {
 	box-sizing: border-box;
-	font-family: 'Playfair Display', serif;
+
+
+
+ 
+    
+    
+    
+    
+    
+    
+    /*font-family: 'Indie Flower', cursive;*/
+
+    font-family: 'Comfortaa', cursive;
+
+    /*font-family: 'Righteous', cursive;*/
+
+    /*font-family: 'Caveat', cursive;*/
+
+    /*font-family: 'Fredoka One', cursive;*/
+
+
 	font-size: 18px;
-	min-height: 200%;
-	background: #2a2a2e;
-	color: blue;
+	min-height: 100%;
+	background: #24292e;
+	color: #FFFFFF;
+}
+
+body
+{
+	margin: 0;
 }
 
 *
@@ -13,25 +38,93 @@ html
 	box-sizing: border-box;
 }
 
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
 
+.wrapper
+{
+	margin: 0 0;
+}
 .nav-container
 {
 	background: #38383d;
 	display: flex;
-	justify-content: space-between;
-	margin: 0 20px;
-	padding: 10px 20px 10px 20px;
+	padding: 5px 30px;
+}
+
+.home-link{
+	flex-basis: 15%;
 }
 
 .home-link a
 {
-	color: #9b50d9;
+	color: #3F74DE;
+	font-family: 'Caveat', cursive;
+	font-size: 40px;
 }
 
 .main-nav
 {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: row;
 	min-width: 50%;
-	background: #2a2a2e;
+	padding: 5px;
+	border-radius: 10px;
+	color: #F0FFFF;
+	text-align: center;
+	font-weight: 500;
+}
+
+.main-nav a
+{
+	min-width: 100px;
+	margin-right: 10px;
+
+}
+
+.main-nav a:last-child
+{
+	margin-right: 0;
+}
+
+
+.icon
+{
+	width: 25px;
+	height: 25px;
+	translate: translateY(-50%);
+	border: solid 1px black;
+	box-shadow: 0 0 5px black;
+}
+
+.text-icon
+{
+	opacity: 1;
+	transition: opacity 1s ease;
+}
+
+.main
+{
+	display: flex;
+	min-height: 200px;
+	margin: 10px 0;
+}
+
+.main *
+{
+	padding: 10px;
+}
+
+.main-content
+{
+	flex-basis: 75%;
+	border-right: solid 1px #38383d;
+}
+
+.event-hub
+{
+	flex-basis: 25%;
 }
