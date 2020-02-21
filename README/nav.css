@@ -1,0 +1,77 @@
+html
+{
+	box-sizing: border-box;
+    
+    /*font-family: 'Indie Flower', cursive;*/
+
+    font-family: 'Comfortaa', cursive;
+
+    /*font-family: 'Righteous', cursive;*/
+
+    /*font-family: 'Caveat', cursive;*/
+
+    /*font-family: 'Fredoka One', cursive;*/
+
+
+	font-size: 18px;
+	min-height: 100%;
+	background: #24292e;
+	color: #FFFFFF;
+}
+
+body
+{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+*
+{
+	box-sizing: inherit;
+}
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+.wrapper
+{
+	margin: 0 0;
+}
+
+.main-nav
+{
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0 40px;
+	list-style: none;
+	background: #38383d;
+	color: #F0FFFF;
+	font-weight: 500;
+}
+
+.main-nav .logo
+{
+	font-weight: 500;
+	font-size: 24px;
+	color: #3f74de;
+}	
+
+.main-nav li
+{
+	margin-left: none;
+	padding: 10px 15px;
+}
+
+.main-nav li + li
+{
+	margin-left: 15px;
+}
+
+.main-nav .profile
+{
+	margin-left: auto;
+}
