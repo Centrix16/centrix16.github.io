@@ -1,0 +1,45 @@
+body
+{
+	min-height: 100vh;
+}
+
+.main-edit
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	width: 30%;
+	padding: 10px 20px;
+	top: 40vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #3b3c44;
+	border-radius: 5px;
+	font-family: 'Comfortaa', cursive;
+}
+
+p input
+{
+	margin-left: 30px;
+	width: auto;
+	background: #3b3c44;
+	border: solid 1px #3f74de;
+	color: #ffffff;
+}
+
+textarea
+{
+	border: solid 1px #3f74de;
+	background: #3b3c44;
+	color: #ffffff;
+	font-size: 16px;
+}
+
+.submit
+{
+	background: #3f74de;
+	border: solid 1px black;
+	padding: 5px;
+	cursor: pointer;
+}
